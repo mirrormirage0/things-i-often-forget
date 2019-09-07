@@ -1,0 +1,21 @@
+#!/bin/sh
+#For VNC server to work on Lubuntu 18.04 LXDE. 
+#sudo apt-get install tightvncserver
+#vncserver -kill :1
+#edit ~/.vnc/xstartup and copy contents below
+#then start the vncserver with the command vncserver . note down the number that displays after the :
+#connect from remmina using IP:1 (1 being the number displayed when vncserver start)
+#quality of screen sucks, need to find a way to improve it.
+
+
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+
+# poll for mail every 2 minutes
+fetchmail -d 120 &
+
+#disable screensaver
+xset s off
+
+exec dbus-launch --exit-with-session lxsession -e LXDE -s Lubuntu
