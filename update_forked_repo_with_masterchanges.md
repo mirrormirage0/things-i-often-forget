@@ -5,7 +5,7 @@
 `git fetch upstream`
 
 #Rewrite your local master with upstream’s master using git rebase.
-git rebase upstream/master
+`git rebase upstream/master`
 
 #Push your changes to master
 `git push origin master --force`
