@@ -1,5 +1,4 @@
 # things-i-often-forget
-Things I often forget
 
 [VirtualBox Guest Additions](https://github.com/mirrormirage0/things-i-often-forget/blob/master/virtualbox-guestadditions-for-linux-guest.md)
 
