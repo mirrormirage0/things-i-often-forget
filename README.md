@@ -1,6 +1,7 @@
 # things-i-often-forget
 Things I often forget
 
+[VirtualBox Guest Additions](https://github.com/mirrormirage0/things-i-often-forget/blob/master/virtualbox-guestadditions-for-linux-guest.md)
 
 [Setup NGINX on Ubuntu VPS Server](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
 
@@ -10,4 +11,4 @@ Things I often forget
 
 [Ubuntu Diskspace Cleanup Utility](https://github.com/mirrormirage0/things-i-often-forget/blob/master/diskcleanup-ubuntu.sh)
 
-changed
+
