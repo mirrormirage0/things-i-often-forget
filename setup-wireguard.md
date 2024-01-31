@@ -30,13 +30,7 @@
  
 # configure wireguard
 
-    
-    mkdir /opt/wireguard
-
-    cd /opt/wireguard/
-    
-    nano /opt/wireguard/docker-compose.yml
-    
+    cat > wg.conf <<EOL
     version: "2.1"
     services:
       wireguard:
@@ -61,7 +55,14 @@
           - 51820:51820/udp
         sysctls:
           - net.ipv4.conf.all.src_valid_mark=1
-        restart: unless-stopped  
+        restart: unless-stopped
+    EOL  
+
+    mkdir /opt/wireguard
+
+    mv wg.conf /opt/wireguard/docker-compose.yml
+
+    cd /opt/wireguard/
     
     docker compose up -d
     
